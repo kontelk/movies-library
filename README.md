@@ -26,7 +26,7 @@
 | ------ | --------- |
 | Presentation (React Components) | `App.jsx` ως root container, επιμέρους components: `Search`, `MovieCard`, `Spinner`. |
 | Data Fetching | Απλές `fetch` κλήσεις στο TMDB API με Authorization header (Bearer Token). |
-| State Management | Τοπικά React hooks (`useState`, `useEffect`) + `useDebounce` από το πακέτο `react-use` για καθυστέρηση αναζήτησης. |
+| State Management | Τοπικά React hooks (`useState`, `useEffect`) + `useDebounce` από το πακέτο `react-use` για debounce logic. |
 | Persistence Layer | Appwrite Database για αποθήκευση / ενημέρωση όρων αναζήτησης & παραγωγή trending λίστας. |
 | Derivative Data | Trending movies παράγονται με ταξινόμηση κατά `count` (descending) μέσω Appwrite `Query.orderDesc`. |
 
@@ -99,7 +99,7 @@ React προσφέρει component-based αρχιτεκτονική, καθαρ�
 
 ---
 
-## 🇬🇧 English
+## 🇬🇧 English version
 
 ### 1. Description
 **Movies Library** is a modern React Single Page Application (SPA) that lets users search for movies via the TMDB API while also tracking search popularity. Each search term is stored in an Appwrite database together with the first movie returned. Based on how often a term is searched, a dynamic Trending Movies list is generated. 
@@ -190,6 +190,4 @@ npm run preview
 React provides a component-driven model, clean state management with hooks, and a vast ecosystem—speeding up the delivery of interactive front-end applications with reusable code.
 
 ---
-
-MIT License (αν δεν έχεις άδεια, προσαρμόζεις / if no license yet, adjust accordingly)
 
